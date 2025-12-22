@@ -1,0 +1,13 @@
+class Cube:
+    def __init__(self):
+        self.state = "Solved Cube"
+
+    def move(self, move):
+        print(f"Applying move: {move}")
+
+cube = Cube()
+
+moves = ["R", "U", "R'", "U'", "F", "F'"]
+
+for m in moves:
+    cube.move(m)
