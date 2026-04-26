@@ -1,0 +1,9 @@
+def digit_cube_sum(n):
+    return sum(int(d)**3 for d in str(abs(n)))
+
+# Is it an Armstrong (narcissistic) number?
+def is_armstrong(n):
+    digits = str(abs(n))
+    power = len(digits)
+    return n == sum(int(d)**power for d in digits)
+
